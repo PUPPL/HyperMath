@@ -2,10 +2,7 @@ import gmpy2
 import random 
 def Pi(n):
     gmpy2.get_context().precision = n
-    S = gmpy2.mpfr(426880)
-    M = gmpy2.mpfr(gmpy2.sqrt(10005))
-    G = gmpy2.mpfr(13591409)
-    return (S*M)/G
+    return gmpy2.const_pi()
 def E(n):
     return gmpy2.exp(1)
 def Lucas_Lehmer_Test(n):
